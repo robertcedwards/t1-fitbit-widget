@@ -1,0 +1,32 @@
+<html>
+<head>
+<script type="text/javascript" charset="utf-8" src="/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/jquery.sparkline.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        /** This code runs when everything has been loaded on the page */
+        /* Inline sparklines take their values from the contents of the tag */
+        $('.inlinesparkline').sparkline(); 
+
+        /* Use 'html' instead of an array of values to pass options 
+        to a sparkline with data in the tag */
+        $('.inlinebar').sparkline('html', {type: 'bar', barColor: '#81F7F3'} );
+    });
+    </script>
+<link rel='stylesheet' href='/base.css' type='text/css' media="screen,
+        projection">
+<meta name = "viewport" content = "width = device-width">
+</head>
+<body>
+<div class="iphone-scrollcontainer">
+   <ul class="iphone-scroll">
+
+   <%=erb :view_data, :layout => false %>
+
+<li class='footer'>Powered by <a href="http://fitbit.com"
+target="_parent">Fitbit</a></li>
+
+</ul>
+</div>
+</body>
+</html>

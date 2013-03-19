@@ -1,0 +1,343 @@
+/*disable the stupid android tap highlight*/
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);	
+}
+
+html, body {
+              font: 12px/15px sans-serif;
+              background: #fff;
+              //padding: 3px;
+              color: #000;
+              margin: 0;
+              -webkit-text-size-adjust: none;
+               text-align:center;
+              background-color:#fff;
+              color:#333333;
+              font-family: Helvetica,sans-serif;
+            }
+
+.iphone-scrollcontainer { }
+.iphone-scroll { list-style: none; padding:0; margin:0; font-family:Georgia, Times, serif; font-size:15px; }
+.iphone-scroll li {  }
+.iphone-scroll ul { list-style: none; padding:0; margin:0; }
+.iphone-scroll ul li { line-height: 25px; }
+.iphone-scroll ul li { display:block; text-decoration:none; color:#000000;
+  border-bottom-style:solid; border-bottom-width:1px; border-bottom-color:#CCCCCC; padding-left:10px; cursor:pointer; }
+.iphone-scroll ul li:hover { color:#000000; }
+
+.iphone-scroll ul li.nohover { color:#000000; background-color:#FFFFFF; background-image:none; }
+
+.iphone-scroll ul li strong { margin-right:10px; }
+ 
+.nav-indicator { font-size: 17px; color:#00394A; text-indent:20px;  background-color:#7AA4A8; line-height: 30px;  -webkit-border-radius: 12px; }
+ 
+.nav-indicator-fixed { line-height:20px;
+  backgrouond-color:#000000;
+ color:#FFFFFF;
+ text-indent:20px;
+ position:fixed;
+ /*width:320px;*/ }
+
+. { position: relative; height: 42px; border: 1px solid #cad6e2; border-bottom-color: #22374a; border-right: 0; border-left: 0; text-align: center; background: -webkit-gradient(linear, left top, left bottom, from(#afbbcb), to(#6e86a4), color-stop(0.48, #8b9db5), color-stop(0.5, #8195af)); }
+
+.error-msg {
+ color: red;
+}
+
+#menu {
+    -webkit-border-radius: 10px;
+    background-color: rgba(0,0,0,.9);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 140px;
+    left: 30px;
+    line-height: 20px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    width: 180px;
+}
+
+li.footer, .iphone-scroll ul li.footer{ 
+  color:#000;
+  border-bottom-width: 0px;
+  border-bottom-style:none;
+}
+
+.bottomcurve {
+  background-color:#00A47B;
+  background: -webkit-gradient(linear, left top, left bottom,  from(#7AA4A8), to(#fff), color-stop(0.3, #7AA4A8));
+  -webkit-border-top-right-radius: 12px;
+  -webkit-border-top-left-radius: 12px;
+}
+
+
+.header { color:#FFFFFF; background-color:#0000A4; }
+.header a { color:#81F7F3 }
+
+.topnav { position: relative; height: 42px; border: 1px solid #cad6e2; border-bottom-color: #22374a; border-right: 0; border-left: 0; text-align: center; background: -webkit-gradient(linear, left top, left bottom, from(#afbbcb), to(#6e86a4), color-stop(0.48, #8b9db5), color-stop(0.5, #8195af)); }
+.topnav h5 { font-size: 20px; color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0, 0.4); margin: 8px 0 0 0; }  
+
+/*
+**
+** imported calories eaten structure comes from fitbit
+*/
+
+#dailyTotals, #firstBlock, .total, .label, .substance, .amount {
+  display: inline;
+}
+
+#dailyTotals h3 {
+    margin: 0px;
+    font-size: 16;
+}
+
+/*
+** Shiny buttons
+** http://mwhenry.com/blog/2009/11/shiny-css-only-iphone-buttons/
+*/
+    input[type=button], .button {
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 1.3em;
+      font-weight: bold;
+      width: 97%;
+      height: 50px;
+      border: 1px solid #282726;
+      background: -webkit-gradient( linear, left top, left bottom, from(#e2e2e2), to(#8c8a88), color-stop(0.5, #acadae), color-stop(0.5, #82807e) );
+      margin: 3px 0 3px 0;
+      text-shadow: 0px 1px 0 #cecece;
+      -webkit-background-origin: padding-box;
+      -webkit-background-clip: border-box;
+      -webkit-border-radius: 8px;
+    }
+
+    input[type=button]:hover, input[type=button].cancel,
+    input[type=button]:active, input[type=button].cancel:active,
+    .button:hover, .button:active
+     {
+      color: #fff;
+      text-shadow: none;
+    }
+
+    input[type=button]:hover, input[type=button].cancel:hover, 
+    .button:hover {
+      background: -webkit-gradient( linear, left top, left bottom, from(#aaaee5), to(#10006d), color-stop(0.5, #1F3B97), color-stop(0.5, #081f6f) );
+    }
+
+    input[type=button].cancel {
+      background: -webkit-gradient( linear, left top, left bottom, from(#5c5c5b), to(#1e1b16), color-stop(0.2, #1e1b16) );
+      margin-top: 6px;
+    }
+
+/*
+* autcomplete style
+*/
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;/**/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('spinner.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #0A246A;
+	color: white;
+}
+
+/*
+* fontstacks from http://awesome-fontstacks.com/bundles/19 
+* http://awesome-fontstacks.com/bundles/new?family_ids=193,220,228,193
+*/
+.afs-ubuntu { font-family: "Ubuntu", "Lucida Grande", "Arial", "Verdana", "Helvetica", "Gill Sans", sans-serif; ;}
+
+.afs-gentium-book-basic { font-family: "Gentium Book Basic", "Georgia", "Palatino", "Times New Roman", "Baskerville", "Hoefler Text", serif; font-size: 114.54%;}
+
+.afs-charis-sil { font-family: "Charis SIL", "Georgia", "Palatino", "Times New Roman", "Baskerville", "Hoefler Text", serif; font-size: 107.88%;}
+
+.afs-ubuntu { font-family: "Ubuntu", "Lucida Grande", "Arial", "Verdana", "Helvetica", "Gill Sans", sans-serif; font-size: 100.00%;}
+
+
+@font-face {
+font-family: Ubuntu;
+src: url('/fonts/ubuntu/Ubuntu-I-webfont.ttf');
+src: local('☺'), url('/fonts/ubuntu/Ubuntu-I-webfont.woff') format('woff'), url('/fonts/ubuntu/Ubuntu-I-webfont.ttf') format('truetype'), url('/fonts/ubuntu/Ubuntu-I-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: Ubuntu;
+src: url('/fonts/ubuntu/Ubuntu-B-webfont.ttf');
+src: local('☺'), url('/fonts/ubuntu/Ubuntu-B-webfont.woff') format('woff'), url('/fonts/ubuntu/Ubuntu-B-webfont.ttf') format('truetype'), url('/fonts/ubuntu/Ubuntu-B-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: Ubuntu;
+src: url('/fonts/ubuntu/Ubuntu-R-webfont.ttf');
+src: local('☺'), url('/fonts/ubuntu/Ubuntu-R-webfont.woff') format('woff'), url('/fonts/ubuntu/Ubuntu-R-webfont.ttf') format('truetype'), url('/fonts/ubuntu/Ubuntu-R-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: Ubuntu;
+src: url('/fonts/ubuntu/Ubuntu-BI-webfont.ttf');
+src: local('☺'), url('/fonts/ubuntu/Ubuntu-BI-webfont.woff') format('woff'), url('/fonts/ubuntu/Ubuntu-BI-webfont.ttf') format('truetype'), url('/fonts/ubuntu/Ubuntu-BI-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: italic;
+}
+
+
+
+@font-face {
+font-family: Gentium Book Basic;
+src: url('/fonts/Gentium-Basic/GenBkBasI-webfont.ttf');
+src: local('☺'), url('/fonts/Gentium-Basic/GenBkBasI-webfont.woff') format('woff'), url('/fonts/Gentium-Basic/GenBkBasI-webfont.ttf') format('truetype'), url('/fonts/Gentium-Basic/GenBkBasI-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: Gentium Book Basic;
+src: url('/fonts/Gentium-Basic/GenBkBasR-webfont.ttf');
+src: local('☺'), url('/fonts/Gentium-Basic/GenBkBasR-webfont.woff') format('woff'), url('/fonts/Gentium-Basic/GenBkBasR-webfont.ttf') format('truetype'), url('/fonts/Gentium-Basic/GenBkBasR-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: Gentium Book Basic;
+src: url('/fonts/Gentium-Basic/GenBkBasBI-webfont.ttf');
+src: local('☺'), url('/fonts/Gentium-Basic/GenBkBasBI-webfont.woff') format('woff'), url('/fonts/Gentium-Basic/GenBkBasBI-webfont.ttf') format('truetype'), url('/fonts/Gentium-Basic/GenBkBasBI-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: Gentium Book Basic;
+src: url('/fonts/Gentium-Basic/GenBkBasB-webfont.ttf');
+src: local('☺'), url('/fonts/Gentium-Basic/GenBkBasB-webfont.woff') format('woff'), url('/fonts/Gentium-Basic/GenBkBasB-webfont.ttf') format('truetype'), url('/fonts/Gentium-Basic/GenBkBasB-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+
+@font-face {
+font-family: Charis SIL;
+src: url('/fonts/Charis-SIL/CharisSILB-webfont.ttf');
+src: local('☺'), url('/fonts/Charis-SIL/CharisSILB-webfont.woff') format('woff'), url('/fonts/Charis-SIL/CharisSILB-webfont.ttf') format('truetype'), url('/fonts/Charis-SIL/CharisSILB-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: Charis SIL;
+src: url('/fonts/Charis-SIL/CharisSILBI-webfont.ttf');
+src: local('☺'), url('/fonts/Charis-SIL/CharisSILBI-webfont.woff') format('woff'), url('/fonts/Charis-SIL/CharisSILBI-webfont.ttf') format('truetype'), url('/fonts/Charis-SIL/CharisSILBI-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: Charis SIL;
+src: url('/fonts/Charis-SIL/CharisSILR-webfont.ttf');
+src: local('☺'), url('/fonts/Charis-SIL/CharisSILR-webfont.woff') format('woff'), url('/fonts/Charis-SIL/CharisSILR-webfont.ttf') format('truetype'), url('/fonts/Charis-SIL/CharisSILR-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: Charis SIL;
+src: url('/fonts/Charis-SIL/CharisSILI-webfont.ttf');
+src: local('☺'), url('/fonts/Charis-SIL/CharisSILI-webfont.woff') format('woff'), url('/fonts/Charis-SIL/CharisSILI-webfont.ttf') format('truetype'), url('/fonts/Charis-SIL/CharisSILI-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: italic;
+}
+
+
+
+@font-face {
+font-family: Ubuntu;
+src: url('/fonts/ubuntu/Ubuntu-I-webfont.ttf');
+src: local('☺'), url('/fonts/ubuntu/Ubuntu-I-webfont.woff') format('woff'), url('/fonts/ubuntu/Ubuntu-I-webfont.ttf') format('truetype'), url('/fonts/ubuntu/Ubuntu-I-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: italic;
+}
+
+
+@font-face {
+font-family: Ubuntu;
+src: url('/fonts/ubuntu/Ubuntu-B-webfont.ttf');
+src: local('☺'), url('/fonts/ubuntu/Ubuntu-B-webfont.woff') format('woff'), url('/fonts/ubuntu/Ubuntu-B-webfont.ttf') format('truetype'), url('/fonts/ubuntu/Ubuntu-B-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: Ubuntu;
+src: url('/fonts/ubuntu/Ubuntu-R-webfont.ttf');
+src: local('☺'), url('/fonts/ubuntu/Ubuntu-R-webfont.woff') format('woff'), url('/fonts/ubuntu/Ubuntu-R-webfont.ttf') format('truetype'), url('/fonts/ubuntu/Ubuntu-R-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 400;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: Ubuntu;
+src: url('/fonts/ubuntu/Ubuntu-BI-webfont.ttf');
+src: local('☺'), url('/fonts/ubuntu/Ubuntu-BI-webfont.woff') format('woff'), url('/fonts/ubuntu/Ubuntu-BI-webfont.ttf') format('truetype'), url('/fonts/ubuntu/Ubuntu-BI-webfont.svg#webfontX4pGz9fc') format('svg');
+font-weight: 700;
+font-style: italic;
+}

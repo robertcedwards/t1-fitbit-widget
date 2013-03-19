@@ -1,0 +1,11 @@
+*.swp
+./tmp
+tmp/
+bin/*
+pkg
+*.gemspec
+db/**
+*_complexity.erb
+phonegap-android/bin/
+.DS_Store
+releases/**

@@ -1,0 +1,18 @@
+<% unless account_complete?(@account) %>
+To use this service, your fitbit email and password are required.
+(to get your data from the fitbit API)<br/>
+    <form action='/account/edit' method='post'>
+    Email: <input type='text' name='email' /><br/>
+    Password: <input type='password' name='password' /><br/>
+    <input type='submit' name='save' value='save' />
+    </form>
+<% end %>
+    <br/>
+    Once your user and password are added you should be able to embed a widget with the code below.<br/>
+    <textarea cols='50' rows='5'><iframe height="320px"
+     frameborder="1" width="200px" scrolling="no" src="<%= "#{CALLBACK_URI_PREFIX}#{request.env['HTTP_HOST']}/widget/#{@account.token}" %>" name="fitbit"></iframe></textarea>
+    <br/><br/>
+    Preview:<br/>
+    <iframe height="320px" frameborder="1" width="200px"
+    scrolling="no" src="<%= "#{CALLBACK_URI_PREFIX}#{request.env['HTTP_HOST']}/widget/#{@account.token}" %>"
+    name="fitbit"></iframe>

@@ -1,0 +1,31 @@
+<!-- needs to check if account valid not just account --!>
+<div class="bottomcurve">
+<li class='footer'>
+<% if @account && !is_app? %> 
+<a href="/home" onclick="return getHome('/home')">home</a>
+<% else %>
+<a href="/" onclick="return getHome('/')">home</a>
+<% end %>
+<% if @account && !is_app? %> 
+- <a href='/get_widget' onclick="return widgetGet();">get widget</a>
+<% end %>
+</li>
+<% if @account && !is_app? %>
+<li class='footer'>
+<a href='/account' onclick="return accountGet();">account</a> - <a href='/logout' onclick="return logoutGet();">logout</a>
+</li>
+<% end %>
+<li class='footer'>
+Data Powered by <a href="http://fitbit.com" target="_parent">Fitbit</a>
+</li>
+<% if is_app? && false %>
+<li class='footer'>
+<div id="accel-data">
+ x: <span id="x"></span>
+ y: <span id="y"></span>
+ z: <span id="z"></span>
+ steps: <span id="step"></span>
+</div>
+</li>
+<% end %>
+</div>
