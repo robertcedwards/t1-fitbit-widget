@@ -1,0 +1,56 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.3)
+    chronic (0.9.1)
+    data_objects (0.10.2)
+      addressable (~> 2.1)
+    dm-core (0.10.2)
+      addressable (~> 2.1)
+      extlib (~> 0.9.14)
+    dm-timestamps (0.10.2)
+      dm-core (~> 0.10.2)
+    dm-validations (0.10.2)
+      dm-core (~> 0.10.2)
+    do_postgres (0.10.2)
+      data_objects (= 0.10.2)
+    domain_name (0.5.9)
+      unf (>= 0.0.5, < 1.0.0)
+    extlib (0.9.16)
+    mechanize (2.5.1)
+      domain_name (~> 0.5, >= 0.5.1)
+      mime-types (~> 1.17, >= 1.17.2)
+      net-http-digest_auth (~> 1.1, >= 1.1.1)
+      net-http-persistent (~> 2.5, >= 2.5.2)
+      nokogiri (~> 1.4)
+      ntlm-http (~> 0.1, >= 0.1.1)
+      webrobots (~> 0.0, >= 0.0.9)
+    mime-types (1.21)
+    net-http-digest_auth (1.2.1)
+    net-http-persistent (2.8)
+    nokogiri (1.5.7)
+    ntlm-http (0.1.1)
+    rack (1.5.2)
+    rack-ssl-enforcer (0.1.2)
+    ruby-fitbit (0.4.1)
+      mechanize (>= 1.0.0)
+      nokogiri (>= 1.3.0)
+    sinatra (1.0)
+      rack (>= 1.0)
+    unf (0.1.0)
+      unf_ext
+    unf_ext (0.0.6)
+    webrobots (0.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  chronic
+  dm-core (= 0.10.2)
+  dm-timestamps (= 0.10.2)
+  dm-validations (= 0.10.2)
+  do_postgres (= 0.10.2)
+  rack-ssl-enforcer (= 0.1.2)
+  ruby-fitbit (= 0.4.1)
+  sinatra (= 1.0)

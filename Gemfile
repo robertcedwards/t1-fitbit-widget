@@ -1,8 +1,9 @@
-sinatra --version 1.0
-ruby-fitbit --version 0.4.1
-chronic
-rack-ssl-enforcer --version 0.1.2
-dm-core --version 0.10.2
-dm-validations --version 0.10.2
-dm-timestamps --version 0.10.2
-do_postgres --version 0.10.2
+source "https://rubygems.org"
+gem 'sinatra', '1.0'
+gem 'ruby-fitbit', '0.4.1'
+gem 'chronic'
+gem 'rack-ssl-enforcer', '0.1.2'
+gem 'dm-core', '0.10.2'
+gem 'dm-validations', '0.10.2'
+gem 'dm-timestamps', '0.10.2'
+gem 'do_postgres', '0.10.2'
